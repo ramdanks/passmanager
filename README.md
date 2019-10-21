@@ -9,6 +9,8 @@ Diaz Ilyasa Azrurrafi Saiful (1806200154)
 - Improve Text User Interface using <curses.h>
 - Minimalist Design
 
+![](Image/Screenshot_1.png)
+
 ### Using Curses.H
 ```bash
     //Menjalankan Ncurses
@@ -19,7 +21,7 @@ Diaz Ilyasa Azrurrafi Saiful (1806200154)
 ### Create Window in Curses.H
 ```bash
     WINDOW *win;
-    in = newwin(YLength, XLength, YCoord, XCoord);
+    win = newwin(YLength, XLength, YCoord, XCoord);
     refresh();
     wrefresh(win);
 ```
@@ -27,8 +29,11 @@ Diaz Ilyasa Azrurrafi Saiful (1806200154)
 ## Cakupan Program
 - ASCII Shifter (Using Array) for Encrypt and Decrypt
 - File Pointer (fopen in <windows.h>) for Saving, Importing, and Modify File
+![](Image/Screenshot_3.png)
 
 ### Encrypt
+- View
+![](Image/Screenshot_2.png)
 ```bash
       for(i = 0; (i < sz && str[i] != '\0'); i++)
       {
@@ -48,6 +53,10 @@ Diaz Ilyasa Azrurrafi Saiful (1806200154)
 ```
 
 ### Decrypt
+- Feature
+![](Image/Screenshot_4.png)
+- View
+![](Image/Screenshot_5.png)
 ```bash
       for(i = 0; (i < sz && str[i] != '\0'); i++)
       {
@@ -82,3 +91,19 @@ Diaz Ilyasa Azrurrafi Saiful (1806200154)
         //Exporting File
         fptr = fopen(filepath, "w"); //W to Write, R to Read
  ```
+ 
+ ### Create Bank Password
+- View
+![](Image/Screenshot_6.png)
+- Security Question
+![](Image/Screenshot_7.png)
+- File Encrypted
+![](Image/Screenshot_8.png)
+
+### Manage Bank Password
+- Prove File Authentication
+![](Image/Screenshot_9.png)
+- View
+You can Edit existing data , Add new Data, Change page view, Save changes to the file. 
+![](Image/Screenshot_10.png)
+
